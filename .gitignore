@@ -3,4 +3,5 @@ node_modules
 out
 dist
 dev-*.log
+AGENTS.md
 docs/superpowers/

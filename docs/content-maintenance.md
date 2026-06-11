@@ -32,8 +32,3 @@ This repo is easiest to maintain when content edits stay in `src/data/` and comp
 
 - `src/data/skills.ts` currently carries an audit note because the inventory may include entries that need owner confirmation.
 - Treat that note as a reminder to verify the list against the resume and project history before considering it final.
-
-## Historical Docs
-
-- Files in `docs/superpowers/` describe the original refactor process.
-- They are historical records, not the current operating instructions for day-to-day maintenance.
