@@ -3,7 +3,6 @@ import { DM_Mono, DM_Sans, DM_Serif_Display } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { profile } from "@/data/profile";
-import { getPagesDeployConfig } from "@/lib/site-config";
 import "@/styles/globals.css";
 
 const dmSans = DM_Sans({
@@ -23,21 +22,14 @@ const dmSerifDisplay = DM_Serif_Display({
   weight: "400",
 });
 
-const { siteUrl } = getPagesDeployConfig(process.env);
-
 export const metadata: Metadata = {
   title: profile.title,
   description: profile.description,
   keywords: profile.keywords,
-  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
-  alternates: {
-    canonical: siteUrl ?? "/",
-  },
   openGraph: {
     title: profile.title,
     description: profile.ogDescription,
     type: "website",
-    url: siteUrl,
     siteName: profile.name,
   },
   twitter: {
